@@ -1,0 +1,65 @@
+.feed {
+  &-posts {
+    padding: 0 20px;
+
+    @media(min-width: 701px){
+      max-width: 1200px;
+      margin: 0 auto;
+    }
+
+    &-title {
+      font-family: Quicksand;
+      font-style: normal;
+      font-weight: 500;
+      font-size: 18px;
+      line-height: 150%;
+      color: #000000;
+      padding: 20px 0;
+
+      @media(min-width: 701px){
+        font-size: 24px;
+      }
+    }
+
+    &-items {
+      display: grid;
+      gap: 20px;
+
+      @media(min-width: 701px){
+        grid-template-columns: repeat(2, 1fr);
+      }
+
+      a {
+        color: #000;
+        text-decoration: none;
+      }
+    }
+
+    &-pagination {
+      display: flex;
+      gap: 10px;
+      padding: 20px;
+      justify-content: center;
+
+      &-item {
+        text-decoration: none;
+        color: #000;
+        font-family: Quicksand;
+        font-style: normal;
+        font-weight: bold;
+        font-size: 18px;
+        line-height: 30px;
+        width: 30px;
+        border-radius: 8px;
+        text-align: center;
+        background-color: #EFEFEF;
+        box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+
+        &.active {
+          background-color: #000;
+          color: #fff;
+        }
+      }
+    }
+  }
+}

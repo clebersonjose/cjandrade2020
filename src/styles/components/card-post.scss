@@ -1,0 +1,56 @@
+.card {
+  &-post {
+    display: grid;
+    grid-template-columns: 1.5fr 2fr;
+    gap: 10px;
+    padding: 20px;
+    background: #EFEFEF;
+    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+    border-radius: 10px;
+
+    @media(min-width: 701px){
+      grid-template-columns: 1fr 2fr;
+      gap: 20px;
+      height: 100%;
+    }
+
+    &-img {
+      width: 100%;
+      aspect-ratio: 1/1;
+      object-fit: cover;
+      border-radius: 10px;
+    }
+
+    &-content {
+      display: grid;
+      gap: 5px;
+    }
+
+    &-title {
+      font-family: Quicksand;
+      font-style: normal;
+      font-weight: 500;
+      font-size: 16px;
+      line-height: 150%;
+      align-self: end;
+
+      @media(min-width: 701px){
+        font-size: 18px;
+      }
+    }
+
+    &-excerpt {
+      font-family: Quicksand;
+      font-style: normal;
+      font-weight: normal;
+      font-size: 14px;
+      line-height: 150%;
+      color: #000000;
+      align-self: start;
+
+      @media(min-width: 701px){
+        font-size: 16px;
+      }
+    }
+  }
+}
